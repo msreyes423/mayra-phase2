@@ -1,0 +1,27 @@
+Make a sign up for email updates as a pop up.
+
+put the welcome/hello notice in between carousel and main content
+
+add space between nav and carousel
+
+reduce space between carousel and main
+
+possible change: move search bar to side bar and move navbar links to the right.
+
+increase carousel speed and resize images. max height: 420px but still full image???
+
+meta tags that work with search bar???
+
+fix links to show relevant info and not file name or just change file name
+
+carousel js event. pause when louse is moved over carousel. link hover changes color.
+
+style carousel text so that on larger screens the caption is bigger.
+
+how to stop nav from increasing margin on smaller screen, which takes up part of the carousel image???
+
+work on sidebar text being aligned in the center so when the vw is smaller the text doesn't stay at the top
+
+
+carousel space between nav.
+repsonsive button size. looks big on mobile.

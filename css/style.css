@@ -1,0 +1,66 @@
+.home {
+   padding-top: 30px;
+}
+
+#myCarousel {
+    margin-top: 85px;   
+    padding: 0 50px;
+}
+
+.carousel-caption {
+    top: 20%;
+    bottom: auto;
+}
+
+.carousel-caption h3 {
+    font-size: 6vw;
+}
+
+.carousel-item img {
+    max-height: 430px;
+    height: auto;
+}
+
+main {
+    padding-top: 70px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 991px) {  
+    .sidebar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    
+    .side-card {
+        margin: 0 30px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 886px) {  
+    .sidebar {
+        display: block;
+        margin-top: 40px;
+    }
+    
+    .carousel-caption h3 {
+    font-size: 4vw;
+    }
+}
+
+
