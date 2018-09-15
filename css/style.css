@@ -1,33 +1,44 @@
-.home {
+.home, .post {
    padding-top: 30px;
 }
 
-#myCarousel {
-    margin-top: 85px;   
-    padding: 0 50px;
+h2, h4, .navbar-brand {
+  font-family: 'Playfair Display', serif;
 }
 
-.carousel-caption {
-    top: 20%;
-    bottom: auto;
+.dropdown-menu-right {
+    background-color: rgba(93, 138, 172, 0.94);
 }
 
-.carousel-caption h3 {
-    font-size: 6vw;
+.dropdown-menu a {
+    color: white;
 }
 
-.carousel-item img {
-    max-height: 430px;
-    height: auto;
+.dropdown-menu a:hover{
+  background-color: rgba(255, 255, 255, 0.5);;
 }
+
+/*.carousel-caption {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}*/
+
+/*.carousel-caption {
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+}*/
 
 main {
-    padding-top: 70px;
+    padding-top: 30px;
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 30px;
     width: 100%;
@@ -35,32 +46,272 @@ footer {
 
 a, a:hover {
     text-decoration: none;
+    color: #0065bb;
+}
+
+.card-image {
+  text-align: center;
 }
 
 
-@media only screen and (max-width: 991px) {  
+@media only screen and (min-width: 800px) {  
     .sidebar {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 40px;
     }
     
-    .side-card {
+    .side-card, .side-card2 {
         margin: 0 30px;
+        width: 18rem;
     }
     
-}
-
-
-@media only screen and (max-width: 886px) {  
-    .sidebar {
-        display: block;
-        margin-top: 40px;
+    .sidebar p {
+        text-align: center;
     }
     
-    .carousel-caption h3 {
-    font-size: 4vw;
-    }
+  .card-img {
+  height: 300px;
+  width: 60%;
+  }
+  
+  .side-bar {
+    align-items: center;
+  }
+
+ .container-fluid {
+  padding-left: 50px;
+  padding-right: 50px;
+  }
+
 }
 
+/*TABLETS & PHONES*/
+@media only screen and (max-width: 800px) {  
+  .card-img {
+  max-height: 300px;
+  }
+}
 
+/*LARGE SCREENS*/
+@media only screen and (min-width: 1400px) {  
+.card-img {
+  height: 500px;
+  width: 80%;
+  }
+}
+@media only screen and (min-width: 1900px) {  
+.card-img {
+  height: 80%;
+  width: 80%;
+  }
+}
+}
+
+/*BLOG CARDS*/
+
+/*PEN STYLES*/
+* {
+  box-sizing: border-box
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700);
+.blog-card {
+  transition: height 0.3s ease;
+  -webkit-transition: height 0.3s ease;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.45em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.blog-card:hover .details {
+  left: 0;
+}
+.blog-card:hover.alt .details {
+  right: 0;
+}
+.blog-card.alt .details {
+  right: -100%;
+  left: inherit;
+}
+.blog-card .photo {
+  height: 200px;
+  position: relative;
+}
+.blog-card .photo.photo1 {
+  background: url("../images/LoTBS2.png") center no-repeat;
+  background-size: cover;
+}
+.blog-card .photo.photo2 {
+  background: url("../images/WYWS.png") center no-repeat;
+  background-size: cover;
+}
+.blog-card .photo.photo3 {
+  background: url("../images/learn2.jpeg") center no-repeat;
+  background-size: cover;
+}
+.blog-card .details {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Open Sans";
+  list-style: none;
+  margin: 0;
+  padding: 10px 15px;
+  height: 200px;
+  /*POSITION*/
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+.blog-card .details > li {
+  padding: 3px 0;
+}
+.blog-card .details li:before, .blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.blog-card .details .author:before {
+  content: "\f007";
+}
+.blog-card .details .date:before {
+  content: "\f133";
+}
+.blog-card .details .tags ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.blog-card .details .tags ul:before {
+  content: "\f02b";
+}
+.blog-card .details .tags li {
+  display: inline-block;
+  margin-right: 3px;
+}
+.blog-card .details a {
+  color: inherit;
+  border-bottom: 1px dotted;
+}
+.blog-card .details a:hover {
+  color: #75D13B;
+}
+.blog-card .description {
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.blog-card .description h1 {
+  font-family: "Roboto";
+  line-height: 1em;
+  margin: 0 0 10px 0;
+}
+.blog-card .description h2 {
+  color: #9b9b9b;
+  font-family: "Open Sans";
+  line-height: 1.2em;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1.2% 0;
+}
+.blog-card .description p {
+  position: relative;
+  margin: 0;
+  padding-top: 20px;
+}
+.blog-card .description p:after {
+  content: "";
+  background: #5d8aac;
+  height: 6px;
+  width: 40px;
+  /*POSITION*/
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+.blog-card .description a {
+  color: #5d8aac;
+  margin-bottom: 10px;
+  float: right;
+}
+/*.blog-card .description a:after {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+}
+.blog-card .description a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}*/
+
+@media screen and (min-width: 700px) {
+  .blog-card {
+    height: 250px;
+    max-width: 750px;
+  }
+  .blog-card:hover .photo {
+    -webkit-transform: rotate(5deg) scale(1.3);
+            transform: rotate(5deg) scale(1.3);
+  }
+  .blog-card:hover.alt .photo {
+    -webkit-transform: rotate(-5deg) scale(1.3);
+            transform: rotate(-5deg) scale(1.3);
+  }
+  .blog-card.alt .details {
+    padding-left: 30px;
+  }
+  .blog-card.alt .description {
+    float: right;
+  }
+  .blog-card.alt .description:before {
+    -webkit-transform: skewX(5deg);
+            transform: skewX(5deg);
+    right: -15px;
+    left: inherit;
+  }
+  .blog-card.alt .photo {
+    float: right;
+  }
+  .blog-card .photo {
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    float: left;
+    height: 100%;
+    width: 40%;
+  }
+  .blog-card .details {
+    width: 40%;
+  }
+  .blog-card .description {
+    float: left;
+    width: 60%;
+    z-index: 0;
+  }
+  .blog-card .description:before {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+    content: "";
+    background: #fff;
+    width: 100%;
+    z-index: -1;
+    /*POSITION*/
+    position: absolute;
+    left: -15px;
+    top: 0;
+    bottom: 0;
+  }
+}

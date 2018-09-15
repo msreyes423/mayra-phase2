@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--PLUG IN-->
+    <link rel="stylesheet" href="css/jquery-backToTop.min.css">
+    <!--MY CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Aigoo - Carousel</title>
+  </head>
+  <body>
+    <!--NAV-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #e3f2fd;">
+      <a class="navbar-brand" href="index.html">Aigoo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavBar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNavBar" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="pages/about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="pages/faq.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">More</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="pages/mywatchlist.html">My Watchlist</a>
+              <a class="dropdown-item" href="pages/learnkorean.html">Learn Korean</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        </form>
+      </div>
+    </nav><!--END OF NAV-->
+    
+    <!--CAROUSEL-->
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top: 80px;">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="img-fluid rounded d-block w-100" src="images/carousel1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded d-block w-100" src="images/carousel2.png" alt="">               
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded d-block w-100" src="images/carousel1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded d-block w-100" src="images/carousel2.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded d-block w-100" src="images/carousel1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid rounded d-block w-100" src="images/carousel2.png" alt="">               
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!--END OF CAROUSEL-->
+    
+    
+    
+    <!--MAIN CONTENT-->
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="card mb-4 border-white">
+            <img class="card-img mb-3" src="images/LoTBS2.png">
+            <h3 class="card-title bg-transparent">Review: The Legend of the Blue Sea</h3>
+            <p class="card-text">Give me mermaids and I'm a happy girl. I love mermaids so I couldn't resist watching this drama. Throw in some romance, a bit of action and suspense and you've got what sounds like a drama tailor-made for me to love.</p>
+            <div class="divider text-center">
+              <a href="pages/post1.html">&laquo; Continue Reading &raquo;</a>
+            </div><!--end of divider-->
+          </div><!--end of card-->
+              
+          <div class="card mb-4 border-white">
+            <img class="card-img mb-3" src="images/WYWS.png">
+            <h3 class="card-title bg-transparent">The Show I'm Most Excited For This Season</h3>
+            <p class="card-text">I still consider myself a newbie when it comes to Kdramas since it's been less than 2 years since I first started watching. I have a few shows under my belt but when I meet other Kdrama fans and ask about recommendations they always name so many that I have never seen or even heard of. But with a show that's currently airing we are on the same playing field. It's new to us both and we both can be equally excited about the possibilities.</p>
+            <div class="divider text-center">
+              <a href="pages/post2.html">&laquo; Continue Reading &raquo;</a>
+            </div><!--end of divider-->
+          </div><!--end of card-->
+        </div><!--END OF BLOG-MAIN-->
+            
+        <!--SIDEBAR-->
+        <div class="col-lg-3 sidebar">
+          <!--<div class="card mb-4">
+            <div class="card-body">
+              <h5 class="text-center">Anyoung haseyo! Welcome to Aigoo.</h5>
+            </div>
+          </div><!--end of card-->
+          
+          <div class="card mb-4 side-card">
+            <a href="pages/mywatchlist.html"><img class="card-img-top" src="images/watchlist.png"></a>
+            <h5 class="card-title text-center">My Watchlist</h5>
+          </div><!--end of card-->
+          
+          <div class="card mb-4 side-card">
+            <div class="card-body text-center">
+              <p class="card-text text-center">Learn Korean today!</p>              <a href="pages/learnkorean.html" class="btn btn-primary">Click here</a>
+            </div>
+          </div><!--end of card-->
+          
+        </div><!--END OF SIDEBAR-->
+      </div><!--end of row-->
+    </main> <!--END OF CONTAINER-FLUID-->
+    
+    
+    
+    <!-- jQuery/Popper.js/Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--MY SCRIPT-->
+    <script src="js/jquery-backToTop.min.js"></script>
+      <script>
+        var $button = $.backToTop();
+      </script>
+      <script src="js/myScript.js"></script>
+</body>
+</html>

@@ -18,10 +18,35 @@ carousel js event. pause when louse is moved over carousel. link hover changes c
 
 style carousel text so that on larger screens the caption is bigger.
 
-how to stop nav from increasing margin on smaller screen, which takes up part of the carousel image???
 
 work on sidebar text being aligned in the center so when the vw is smaller the text doesn't stay at the top
 
 
 carousel space between nav.
 repsonsive button size. looks big on mobile.
+
+
+Add form on posts for comments!!!
+https://blackrockdigital.github.io/startbootstrap-modern-business/blog-post.html
+
+
+collapsible group items fro FAQ page??
+https://blackrockdigital.github.io/startbootstrap-modern-business/faq.html
+
+
+fix carousel text. Make center and responsive. 
+Also indicator arrows need to stay on carousel when resized.
+
+
+look into @include media-breakpoint for responsive text.
+
+---------------------------------------------------
+CARDS AS POSTS:
+https://mdbootstrap.com/bootstrap-card-posts/
+
+
+MISSING:
+need form with button
+consider adding search bar back or make a sign up email submit box
+
+
